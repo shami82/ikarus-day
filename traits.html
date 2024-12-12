@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Ikarus Day</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style type="text/css">
+        body {
+            font-family: 'Montserrat', sans-serif;
+            padding: 0;
+            text-align: center;
+            background: url('IMG/wallpaper.jpg') no-repeat center center/cover;
+            color: #282828;
+        }
+
+        body p{
+          font-family: 'Courier New', monospace; 
+          padding: 15px;
+          font-size: 15px;
+        }
+
+        #nav {
+            background-color: rgba(255,255,255,0.7);
+            font-family: 'Courier New', monospace; 
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: #282828;
+            font-weight: bold;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #nav a:hover {
+            color: #eb9191;
+        }
+
+        #nav a.active {
+            background-color: #eb9191;
+            color: white;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .column {
+            flex: 1;
+            text-align: center;
+        }
+
+        .boxes-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .box {
+            width: 100%;
+            height: 180px;
+            background-color: #eb9191;
+            position: relative;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: transparent;
+            font-size: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            border: 2px solid #eb9191;
+        }
+
+        .box:hover {
+            background-color: white;
+            color: #eb9191;
+            border: 2px solid #eb9191;
+        }
+
+        .box p {
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .box:hover p {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="mainContainer">
+        <!-- Navigation Menu -->
+        <div id="nav">
+            <a href="index.html">Home</a>
+            <a href="songs.html">Songs</a>
+            <a href="memories.html">Memories</a>
+            <a class="active" href="traits.html">Traits</a>
+        </div>
+
+        <img src="IMG/birthdaybanner.png" width="90%" height="90%">
+        <h2>----------------------------------------------</h2>
+        <h2 id="pageTitle">Things I Love About You</h2>
+        <h2>----------------------------------------------</h2>
+        <div class="boxes-container">
+            <div class="box">
+                <p>-Your Laugh-<br>it's just so sweet and cute and whenever I hear it, it always makes me laugh too hehe and its just really contagious whether i hear it in person with our silly jokes or through call or your stories</p>
+            </div>
+            <div class="box">
+                <p>-Your Fashion Taste-<br>you've been an inspiration for so long and I adore your style so much, like the thought process behind everything and layers are all just so wow you're literally drawing inspo its so cool</p>
+            </div>
+            <div class="box">
+                <p>-Your Care-<br>through every stage of life we've faced together you've always been caring to those you love even if in different ways and its so admirable</p>
+            </div>
+            <div class="box">
+                <p>-Your Behavior?-<br>i dont rly have an explanation, but its always so sweet to see how free we are with each other and it feels like no matter what, good or bad, we can always talk and be us around each other</p>
+            </div>
+            <div class="box">
+                <p>-Your Smile-<br>i love looking at it its so cutie patootie and you don't tend to smile too much even in pics but that kinda just makes me love seeing it more</p>
+            </div>
+            <div class="box">
+                <p>-Your Creativity-<br>all your crafts, the gifts you make, everything you discover and create is always just so wow i love always seeing the new things you make and show they're always so cool</p>
+            </div>
+            <div class="box">
+                <p>-Your Taste in Food-<br>hehe i feel like we have similar taste so randomly when i eat something spicy i think about how youd like it to and things like that hehe</p>
+            </div>
+            <div class="box">
+                <p>-Your Love for Things-<br>its just so cute how recognizable the things you love are cuz of how present it is around you and i just rly like it :></p>
+            </div>
+            <div class="box">
+                <p>-Your Writing-<br>ever since we were in middle school i've loved all the things you've written from the stories to the fanfics lol to the poems and the lil tid bits and drabbles that you write and post, theyre always so nice</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="nav"></div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Ikarus Day</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style type="text/css">
+        body {
+            font-family: 'Montserrat', sans-serif;
+            padding: 0;
+            text-align: center;
+            background: url('IMG/wallpaper.jpg') no-repeat center center/cover;
+            color: #282828;
+        }
+
+        body p{
+          font-family: 'Courier New', monospace; 
+          padding: 15px;
+          font-size: 18px;
+        }
+        #nav {
+            background-color: rgba(255,255,255,0.7);
+            font-family: 'Courier New', monospace; 
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: #282828;
+            font-weight: bold;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #nav a:hover {
+            color: #eb9191;
+        }
+
+        #nav a.active {
+            background-color: #eb9191;
+            color: white;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+            text-align: center;
+        }
+
+        .column img {
+            width: 100%;
+            max-width: 250px; 
+            border-radius: 10px;
+            height: auto;
+            border: 2px solid white;
+        }
+
+        .column img:hover{
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="mainContainer">
+        <!-- Navigation Menu -->
+        <div id="nav">
+            <a class = "active" href = "index.html">Home</a>
+            <a href = "songs.html">Songs</a>
+            <a href = "memories.html">Memories</a>
+            <a href = "traits.html">Traits</a>
+        </div>
+
+        <img src="IMG/birthdaybanner.png" width="90%" height="90%">
+
+        <div id="intro">
+            <p>
+                I hope you know that you'll always be someone I forever care about no matter <br>how long it's been since the last time we've seen each other. You're <br>the cutie patootiest and I love you more than you know.
+                <br><br>
+                ♥ ♥ ♥
+                <br><br>
+                Here's a silly lil site I made about things that remind me of you! <br>I hope you like it <br>:>
+            </p>
+        </div>
+        <br>
+        <h2>----------------------------------------------</h2>
+        <h2 id="pageTitle">All Sections</h2>
+        <div class="row">
+            <div class="column">
+                <a href="songs.html">
+                    <img src ="IMG/strawb.png" width="100%">
+                </a>
+            </div>
+
+            <div class="column">
+                <a href="memories.html">
+                    <img src ="IMG/milk.png" width="100%">
+                </a>
+            </div>
+
+            <div class="column">
+                <a href="traits.html">
+                    <img src ="IMG/flowers.png" width="100%">
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p>Songs That Remind Me of You</p>
+            </div>
+
+            <div class="column">
+                <p>Silly Memories We've Had</p>
+            </div>
+
+            <div class="column">
+                <p>Things I Love About You</p>
+            </div>
+        </div>
+    </div>
+    <div id="nav"></div>
+</body>
+</html>

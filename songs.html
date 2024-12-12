@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Ikarus Day</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style type="text/css">
+        body {
+            font-family: 'Montserrat', sans-serif;
+            padding: 0;
+            text-align: center;
+            background: url('IMG/wallpaper.jpg') no-repeat center center/cover;
+            color: #282828;
+        }
+
+        body p{
+          font-family: 'Courier New', monospace; 
+          padding: 15px;
+          font-size: 15px;
+        }
+
+        #nav {
+            background-color: rgba(255,255,255,0.7);
+            font-family: 'Courier New', monospace; 
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: #282828;
+            font-weight: bold;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #nav a:hover {
+            color: #eb9191;
+        }
+
+        #nav a.active {
+            background-color: #eb9191;
+            color: white;
+        }
+
+        .carousel-container {
+		    position: relative;
+		    margin: 20px auto;
+		    width: 80%;
+		    max-width: 900px;
+		    overflow: hidden;
+		    border-radius: 10px;
+		    background-color: rgba(255, 255, 255, 0.8);
+		}
+
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            min-width: 33.33%; 
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+            border: 2px solid white;
+        }
+
+        .carousel-item p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .carousel-item iframe {
+		    border-radius: 10px;
+		    border: 2px solid white;
+		    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+
+
+        .carousel-btn {
+		    position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    background-color: #eb9191;
+		    color: white;
+		    border: none;
+		    padding: 10px 15px;
+		    cursor: pointer;
+		    border-radius: 5px;
+		    z-index: 1; 
+		}
+
+		.carousel-btn[disabled] {
+		    opacity: 0.5; 
+		    pointer-events: none;
+		}
+
+		.carousel-btn:hover {
+		    background-color: #c76969;
+		}
+
+
+        .carousel-btn.prev {
+            left: 10px;
+        }
+
+        .carousel-btn.next {
+            right: 10px;
+        }
+        .song-link {
+		    font-family: 'Courier New', monospace; 
+		    display: inline-block; 
+		    color: #282828;
+		    text-decoration: none;
+		    font-size: 15px;
+		    margin-top: 30px;
+		}
+
+		.song-link:hover {
+		    color: #eb9191;
+		}
+
+    </style>
+</head>
+<body>
+    <div id="mainContainer">
+        <!-- Navigation Menu -->
+        <div id="nav">
+            <a href="index.html">Home</a>
+            <a class="active" href="songs.html">Songs</a>
+            <a href="memories.html">Memories</a>
+            <a href="traits.html">Traits</a>
+        </div>
+
+        <img src="IMG/birthdaybanner.png" width="90%" height="90%">
+        <h2>----------------------------------------------</h2>
+        <h2 id="pageTitle">Songs That Remind Me of You</h2>
+        <h2>----------------------------------------------</h2>
+        <!-- Carousel -->
+        <div class="carousel-container">
+            <button class="carousel-btn prev" onclick="moveCarousel(-1)">Previous</button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <iframe 
+				        width="100%" 
+				        height="195" 
+				        src="https://www.youtube.com/embed/ACfe_ICNQpc" 
+				        frameborder="0" 
+				        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+				        allowfullscreen>
+				    </iframe>
+                    <a href="https://youtu.be/ACfe_ICNQpc?si=_94hOcNcO85NI07a
+https://youtu.be/ACfe_ICNQpc?si=_94hOcNcO85NI07a" class="song-link">HOHYUN - A.E.I.O.U.</a>
+                </div>
+                
+                <div class="carousel-item">
+                    <iframe 
+				        width="100%" 
+				        height="195" 
+				        src="https://www.youtube.com/embed/CnVVjLOGVoY" 
+				        frameborder="0" 
+				        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+				    </iframe>
+                    <a href="https://youtu.be/CnVVjLOGVoY?si=z2IcBS_-WyX_I_nA
+https://youtu.be/CnVVjLOGVoY?si=z2IcBS_-WyX_I_nA" class="song-link">wave to earth - seasons</a>
+                </div>
+                
+                <div class="carousel-item">
+                    <iframe 
+                        width="100%" 
+                        height="195" 
+                        src="https://www.youtube.com/embed/NSl6jd0r9Vk" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <a href="https://youtu.be/NSl6jd0r9Vk?si=7TYOsXDIOIgGspVn" class="song-link">FINNEAS - Let's Fall in Love For the Night</a>
+                </div>
+
+                <div class="carousel-item">
+                    <iframe 
+                        width="100%" 
+                        height="195" 
+                        src="https://www.youtube.com/embed/VQLvGljJS64" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <a href="https://youtu.be/vDPxVVyZzAY?si=i043sDUvtbp_Qwhl
+https://youtu.be/vDPxVVyZzAY?si=i043sDUvtbp_Qwhl" class="song-link">mxmtoon - prom dress</a>
+                </div>
+
+                <div class="carousel-item">
+                    <iframe 
+                        width="100%" 
+                        height="195" 
+                        src="https://www.youtube.com/embed/Pf9KVHOeblE" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <a href="https://youtu.be/Pf9KVHOeblE?si=0aY4qfB2vX2oFTOm" class="song-link">Laufey - Best Friend</a>
+                </div>
+
+                <div class="carousel-item">
+                    <iframe 
+                        width="100%" 
+                        height="195" 
+                        src="https://www.youtube.com/embed/fQ50-gSAWGg" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <a href="https://youtu.be/Iz0m4R-UV0s?si=iCpyNQQiVa8_xUP1
+https://youtu.be/Iz0m4R-UV0s?si=iCpyNQQiVa8_xUP1" class="song-link">Cody Fry - I Hear a Symphony</a>
+                </div>
+
+                <div class="carousel-item">
+                    <iframe 
+                        width="100%" 
+                        height="195" 
+                        src="https://www.youtube.com/embed/noJ4I3RBoEY"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <a href="https://youtu.be/noJ4I3RBoEY?si=RlvvAdNCzetfn9Fx" class="song-link">Conan Gray - People Watching</a>
+                </div>
+
+                <div class="carousel-item">
+                    <iframe 
+                        width="100%" 
+                        height="195" 
+                        src="" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <a href="https://youtu.be/1R7p8ur05sk?si=9tGNVCcX5oZTGqRb" class="song-link">lil specific chrithmas playlist</a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://youtu.be/tyKu0uZS86Q?si=hOgq8sxZ832uWoVm" class="song-link" target="_blank">
+                        <img src="IMG/strawb.png">
+                    </a>
+                    <a href="https://youtu.be/tyKu0uZS86Q?si=hOgq8sxZ832uWoVm" class="song-link">Laufey - Valentine</a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://youtu.be/1R7p8ur05sk?si=9tGNVCcX5oZTGqRb" class="song-link" target="_blank">
+                        <img src="IMG/strawb.png">
+                    </a>
+                    <a href="https://youtu.be/1R7p8ur05sk?si=9tGNVCcX5oZTGqRb" class="song-link">Conan Gray - Maniac</a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://youtu.be/1OmyGiHptUg?si=7-hbSj8ch_sB5Qcf" class="song-link" target="_blank">
+                        <img src="IMG/strawb.png">
+                    </a>
+                    <a href="https://youtu.be/1OmyGiHptUg?si=7-hbSj8ch_sB5Qcf" class="song-link">Clavita - Almond Eyes</a>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="IMG/strawb.png">
+                    <a href="https://youtu.be/brrugYqMeEk?si=r29cIN3rCf1NKEYv" class="song-link">grentperez - Wishful Thinking</a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://youtu.be/PNHBk7scWXs?si=3xc8_7XM7P9Ke11_" class="song-link" target="_blank">
+                        <img src="IMG/strawb.png">
+                    </a>
+                    <a href="https://youtu.be/PNHBk7scWXs?si=3xc8_7XM7P9Ke11_" class="song-link">Gigi Perez - Fable</a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://youtu.be/ghpn99s8I-U?si=oI7DZABWTtrhgBte" class="song-link" target="_blank">
+                        <img src="IMG/strawb.png">
+                    </a>
+                    <a href="https://youtu.be/ghpn99s8I-U?si=oI7DZABWTtrhgBte" class="song-link">Stella Jang - Villain</a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://youtu.be/hWOB5QYcmh0?si=PegI7ccOVU_QKFYm" class="song-link" target="_blank">
+                        <img src="IMG/strawb.png">
+                    </a>
+                    <a href="https://youtu.be/hWOB5QYcmh0?si=PegI7ccOVU_QKFYm" class="song-link">HONNE - Day 1</a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://youtu.be/tZ4cM0hYofc?si=eLfGsekiSo8qKnqH" class="song-link" target="_blank">
+                        <img src="IMG/strawb.png">
+                    </a>
+                    <a href="https://youtu.be/tZ4cM0hYofc?si=eLfGsekiSo8qKnqH" class="song-link">Kurage-P - My R</a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://youtu.be/v27COkZT4GY?si=kBRp2Hn5peYgB2TY" class="song-link" target="_blank">
+                        <img src="IMG/strawb.png">
+                    </a>
+                    <a href="https://youtu.be/v27COkZT4GY?si=kBRp2Hn5peYgB2TY" class="song-link">James Arthur - Car's Outside</a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://youtu.be/1OmyGiHptUg?si=7-hbSj8ch_sB5Qcf" class="song-link" target="_blank">
+                        <img src="IMG/strawb.png">
+                    </a>
+                    <a href="https://youtu.be/1OmyGiHptUg?si=7-hbSj8ch_sB5Qcf" class="song-link">Clavita - Almond Eyes</a>
+                </div>
+
+            </div>
+            <button class="carousel-btn next" onclick="moveCarousel(1)">Next</button>
+        </div>
+    </div>
+	    <script>
+	        const carousel = document.querySelector('.carousel');
+	        let currentIndex = 0;
+
+	        function updateButtons() {
+			    const prevButton = document.querySelector('.carousel-btn.prev');
+			    const nextButton = document.querySelector('.carousel-btn.next');
+			    const totalItems = document.querySelectorAll('.carousel-item').length;
+			    const itemsPerView = 3;
+			    const maxIndex = Math.ceil(totalItems / itemsPerView) - 1;
+
+			    prevButton.disabled = currentIndex === 0;
+			    nextButton.disabled = currentIndex === maxIndex;
+			}
+
+			function moveCarousel(direction) {
+			    const totalItems = document.querySelectorAll('.carousel-item').length;
+			    const itemsPerView = 3;
+			    const maxIndex = Math.ceil(totalItems / itemsPerView) - 1;
+
+			    currentIndex += direction;
+			    if (currentIndex < 0) currentIndex = maxIndex;
+			    if (currentIndex > maxIndex) currentIndex = 0;
+
+			    const translateX = -(currentIndex * 100);
+			    carousel.style.transform = `translateX(${translateX}%)`;
+
+			    updateButtons();
+			}
+	    </script>
+    </div>
+    <br>
+    <div id="nav"></div>
+</body>
+</html>
